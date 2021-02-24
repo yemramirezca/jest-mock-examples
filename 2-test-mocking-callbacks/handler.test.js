@@ -15,7 +15,7 @@ describe('Mocking callbacks', () => {
     });
 
     test('event undefined => response 500,callback called once', () => {
-        const event = {}
+        const event = undefined
         const myMockedCallback = jest.fn()
         targetUnit.myHandler(event, myMockedCallback)
         const expectedOutcome = {

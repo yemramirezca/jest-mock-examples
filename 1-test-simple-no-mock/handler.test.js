@@ -10,6 +10,7 @@ describe('Simple test without mocking', () => {
             "status": 200,
         }
         expect(actualOutcome).toEqual(expectedOutcome);
+        expect(actualOutcome).toBe(expectedOutcome);
 
     });
 
